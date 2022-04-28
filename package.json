@@ -1,0 +1,22 @@
+{
+  "name": "discord-high",
+  "version": "1.0.0",
+  "description": "High level control of certain functions. Exclusively used for making discord bots.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/vitu0089/DiscordHigh.git)"
+  },
+  "keywords": [
+    "Discord"
+  ],
+  "author": "vitu0089",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "node-json-db": "^1.5.0"
+  }
+}
