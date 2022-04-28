@@ -14,8 +14,8 @@ class HLD {
         };
     }
     getUser(user_id, if_null) {
-        console.log(this.DB.getData("/"));
-        //return this.DB.find("/Member/" + user_id)
+        var user_path = "/" + user_id;
+        return this.DB.Members.exists(user_path) && this.DB.Members.getData(user_path) || if_null || false;
     }
     setUser(user_id, if_null) {
     }
