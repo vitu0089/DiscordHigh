@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^13.6.0",
-    "node-json-db": "^1.5.0"
+    "node-json-db": "^1.5.0",
+    "stripe": "^8.219.0"
   }
 }
