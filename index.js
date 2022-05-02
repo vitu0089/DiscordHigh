@@ -158,7 +158,7 @@ class Stripe {
         //@ts-ignore
         this.handler = new stripe_1.Stripe(private_key);
     }
-    invoice(options) {
+    createPaymentLink(options) {
         return this.handler.paymentLinks.create({
             line_items: [{ quantity: 1, price: options.price_id, adjustable_quantity: { enabled: true, maximum: 10, minimum: 1 } }]
         });

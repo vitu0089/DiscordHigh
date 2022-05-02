@@ -205,7 +205,7 @@ export class Stripe {
         this.handler = new StripeModule(private_key)
     }
 
-    invoice(options:{quantity:number,price_id:string}){
+    createPaymentLink(options:{quantity:number,price_id:string}){
         return this.handler.paymentLinks.create({
             line_items:[{quantity:1,price:options.price_id,adjustable_quantity:{enabled:true,maximum:10,minimum:1}}]
         })
